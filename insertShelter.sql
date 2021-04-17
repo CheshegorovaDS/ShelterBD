@@ -6,24 +6,24 @@ INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Cat');
 INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Dog');
 INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Other');
 
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'aBC@mail.ru', '2019-02-02');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131000000', 'a@mail.ru', '2019-02-02');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131111111', 'aBBB@mail.ru', '2019-02-02');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131222222', 'bbbbb@mail.ru', '2019-04-15');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131000002', 'bbccb@mail.ru', '2010-02-02');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131333331', 'aC@mail.ru', '2020-02-02');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131333333', 'dddd@mail.ru', '2019-06-15');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131444441', 'ee@mail.ru', '2019-02-20');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'aBC@mail.ru', 'q');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131000000', 'a@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131111111', 'aBBB@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131222222', 'bbbbb@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131000002', 'bbccb@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131333331', 'aC@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131333333', 'dddd@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131444441', 'ee@mail.ru', 'test');
 /*INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'ffff@mail.ru', '2017-02-02');*/
 
-INSERT INTO shelter_bd.HUMAN VALUES('1', 'ИВАН', 'ИВАНОВ', NULL, NULL, 'МОСКВА', 'РОССИЯ');
-INSERT INTO shelter_bd.HUMAN VALUES('2', 'Иван', 'Иванов', NULL, NULL, 'Калининград', 'Россия');
-INSERT INTO shelter_bd.HUMAN VALUES('3', 'Сергей', 'Сергеев', NULL, NULL, 'Владивосток', 'Россия');
-INSERT INTO shelter_bd.HUMAN VALUES('4', 'Петр', 'Путилов', NULL, NULL, 'Москва', 'Россия');
-INSERT INTO shelter_bd.HUMAN VALUES('5', 'Павел', 'Ленский', NULL, NULL, 'Москва', 'Россия');
-INSERT INTO shelter_bd.HUMAN VALUES('8', 'Кирилл', 'Савин', NULL, NULL, 'Владивосток', 'Россия');
-INSERT INTO shelter_bd.HUMAN VALUES('7', 'Жора', 'Дуднев', NULL, NULL, 'Тюмень', 'Россия');
-INSERT INTO shelter_bd.HUMAN VALUES('6', 'Жора', 'Дуднев', NULL, NULL, 'Тюмень', 'Россия');
+INSERT INTO shelter_bd.HUMAN VALUES('1', 'ИВАН', 'ИВАНОВ', NULL, NULL, 'МОСКВА', 'РОССИЯ', '2019-02-02');
+INSERT INTO shelter_bd.HUMAN VALUES('2', 'Иван', 'Иванов', NULL, NULL, 'Калининград', 'Россия', '2019-02-02');
+INSERT INTO shelter_bd.HUMAN VALUES('3', 'Сергей', 'Сергеев', NULL, NULL, 'Владивосток', 'Россия', '2019-04-15');
+INSERT INTO shelter_bd.HUMAN VALUES('4', 'Петр', 'Путилов', NULL, NULL, 'Москва', 'Россия', '2019-04-15');
+INSERT INTO shelter_bd.HUMAN VALUES('5', 'Павел', 'Ленский', NULL, NULL, 'Москва', 'Россия', '2019-06-15');
+INSERT INTO shelter_bd.HUMAN VALUES('8', 'Кирилл', 'Савин', NULL, NULL, 'Владивосток', 'Россия', '2021-02-21');
+INSERT INTO shelter_bd.HUMAN VALUES('7', 'Жора', 'Дуднев', NULL, NULL, 'Тюмень', 'Россия', '2019-04-15');
+INSERT INTO shelter_bd.HUMAN VALUES('6', 'Жора', 'Дуднев', NULL, NULL, 'Тюмень', 'Россия', '2019-02-20');
 
 /*INSERT INTO shelter_bd.ORGANISATION VALUES('9','7788888888','Будка',NULL);*/
 

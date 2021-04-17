@@ -7,11 +7,13 @@ CREATE TABLE USER (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `phone` VARCHAR(11),
   `email` VARCHAR(45),
-  `date` DATE NOT NULL,
+  `password` VARCHAR(20),
   PRIMARY KEY (`id`),
   UNIQUE INDEX `phone_UNIQUE` (`phone` ASC),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC),
-  CHECK(`phone` IS NOT NULL || `email` is NOT NULL))
+  CHECK(`phone` IS NOT NULL ||
+        `email` is NOT NULL || 
+	`password` is NOT NULL))
 DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE HUMAN (
@@ -22,6 +24,7 @@ CREATE TABLE HUMAN (
   `birthdate` DATE DEFAULT NULL,
   `city` VARCHAR(45) NOT NULL,
   `country` VARCHAR(45) NOT NULL,
+  `date` DATE NOT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`id`) REFERENCES USER (`id`)
     ON DELETE CASCADE)
@@ -33,6 +36,7 @@ CREATE TABLE ORGANISATION (
   `TIN` VARCHAR(12) NOT NULL,
   `title` VARCHAR(45) NOT NULL,
   `additionalInfo` VARCHAR(500) DEFAULT NULL,
+  `date` DATE NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `TIN_UNIQUE` (`TIN` ASC),
   UNIQUE INDEX `title_UNIQUE` (`title` ASC),
