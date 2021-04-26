@@ -5,15 +5,12 @@ USE `shelter_bd` ;
 
 CREATE TABLE USER (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `phone` VARCHAR(11),
-  `email` VARCHAR(45),
-  `password` VARCHAR(20),
+  `phone` VARCHAR(11) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `phone_UNIQUE` (`phone` ASC),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
-  CHECK(`phone` IS NOT NULL ||
-        `email` is NOT NULL || 
-	`password` is NOT NULL))
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC))
 DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE HUMAN (
@@ -24,7 +21,7 @@ CREATE TABLE HUMAN (
   `birthdate` DATE DEFAULT NULL,
   `city` VARCHAR(45) NOT NULL,
   `country` VARCHAR(45) NOT NULL,
-  `date` DATE NOT NULL,
+  `registrationDate` DATE NOT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (`id`) REFERENCES USER (`id`)
     ON DELETE CASCADE)
@@ -36,7 +33,7 @@ CREATE TABLE ORGANISATION (
   `TIN` VARCHAR(12) NOT NULL,
   `title` VARCHAR(45) NOT NULL,
   `additionalInfo` VARCHAR(500) DEFAULT NULL,
-  `date` DATE NOT NULL,
+  `registrationDate` DATE NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `TIN_UNIQUE` (`TIN` ASC),
   UNIQUE INDEX `title_UNIQUE` (`title` ASC),
@@ -49,15 +46,13 @@ CREATE TABLE ANIMAL_TYPE (
   `title` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `title_UNIQUE` (`title` ASC))
-#ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE ANIMAL (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
   `age` INT(3)DEFAULT NULL,
-  `sex` ENUM ('F','M') NOT NULL,
- #`idCategory` INT(11) NOT NULL,
+  `sex` ENUM ('F','M', 'NONE') NOT NULL,
   `breed` VARCHAR(45) DEFAULT NULL,
   `idAnimalType` INT(11) NOT NULL,
   `passport` VARCHAR(15) NULL DEFAULT NULL,
@@ -91,5 +86,4 @@ CREATE TABLE CARD (
   FOREIGN KEY (`idUser`) REFERENCES USER (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-#ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
