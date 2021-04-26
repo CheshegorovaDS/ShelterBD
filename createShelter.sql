@@ -56,6 +56,7 @@ CREATE TABLE ANIMAL (
   `breed` VARCHAR(45) DEFAULT NULL,
   `idAnimalType` INT(11) NOT NULL,
   `passport` VARCHAR(15) NULL DEFAULT NULL,
+  `description` VARCHAR(200) NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `passport_UNIQUE` (`passport` ASC),
   FOREIGN KEY (`idAnimalType`) REFERENCES ANIMAL_TYPE (`id`)
