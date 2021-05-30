@@ -7,7 +7,7 @@ CREATE TABLE USER (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `phone` VARCHAR(11) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(20) NOT NULL,
+  `password` VARCHAR(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `phone_UNIQUE` (`phone` ASC),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC))
