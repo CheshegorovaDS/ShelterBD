@@ -6,7 +6,7 @@ INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Кошка');
 INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Собака');
 INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Другое');
 
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'aBC@mail.ru', 'q');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'aBC@mail.ru', 'a461d09e-40f2-4b0e-99d5-5700b006621f');
 INSERT INTO shelter_bd.USER VALUES(NULL, '89131000000', 'a@mail.ru', 'test');
 INSERT INTO shelter_bd.USER VALUES(NULL, '89131111111', 'aBBB@mail.ru', 'test');
 INSERT INTO shelter_bd.USER VALUES(NULL, '89131222222', 'bbbbb@mail.ru', 'test');
