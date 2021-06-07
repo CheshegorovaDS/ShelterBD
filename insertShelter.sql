@@ -6,8 +6,8 @@ INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Кошка');
 INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Собака');
 INSERT INTO shelter_bd.ANIMAL_TYPE VALUES(NULL, 'Другое');
 
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'aBC@mail.ru', 'a461d09e-40f2-4b0e-99d5-5700b006621f');
-INSERT INTO shelter_bd.USER VALUES(NULL, '89131000000', 'a@mail.ru', 'test');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131000001', 'a@mail.ru', 'a461d09e-40f2-4b0e-99d5-5700b006621f');
+INSERT INTO shelter_bd.USER VALUES(NULL, '89131000000', 'aBC@mail.ru', 'a461d09e-40f2-4b0e-99d5-5700b006621f');
 INSERT INTO shelter_bd.USER VALUES(NULL, '89131111111', 'aBBB@mail.ru', 'test');
 INSERT INTO shelter_bd.USER VALUES(NULL, '89131222222', 'bbbbb@mail.ru', 'test');
 INSERT INTO shelter_bd.USER VALUES(NULL, '89131000002', 'bbccb@mail.ru', 'test');
@@ -33,7 +33,7 @@ INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Тузик', 'https://cdn.pixabay.co
 INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Барсик', 'https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg', '2', 'M', NULL, '1', NULL, NULL);
 INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Альма', 'https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_960_720.jpg', '1', 'F', NULL, '2', 'ADS123212121212', NULL);
 INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Хома', 'https://cdn.pixabay.com/photo/2017/05/13/17/37/hamster-2310228_960_720.jpg', NULL, 'M', NULL, '3', NULL, NULL);
-INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Кеша', 'https://cdn.pixabay.com/photo/2016/11/16/07/58/budgie-1828345_960_720.jpg', '1', 'M', NULL, '3', NULL, NULL);
+INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Кеша', 'https://cdn.pixabay.com/photo/2016/11/16/07/58/budgie-1828345_960_720.jpg', '1', 'NONE', NULL, '3', NULL, NULL);
 INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Мурка', 'https://cdn.pixabay.com/photo/2020/10/15/15/55/cat-5657148_960_720.jpg', '16', 'F', NULL, '1', NULL, NULL);
 INSERT INTO shelter_bd.ANIMAL VALUES(NULL, 'Тарзан', 'https://cdn.pixabay.com/photo/2019/08/19/07/45/dog-4415649_960_720.jpg', '16', 'M', NULL, '2', NULL, NULL);
 
